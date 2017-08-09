@@ -39,7 +39,7 @@ int main(int argc, const char * argv[])
             }
 
             //dump process info
-            NSLog(@"process: %@", process);
+            NSLog(@"process:\n%@", process);
             
             //bail
             goto bail;
@@ -56,7 +56,7 @@ int main(int argc, const char * argv[])
             for(Process* process in [processInfo currentProcesses])
             {
                 //dump process info
-                NSLog(@"new process: %@", process);
+                NSLog(@"new process:\n%@", process);
             }
             
             //bail
@@ -85,7 +85,7 @@ int main(int argc, const char * argv[])
                 if(process.type != EVENT_EXIT)
                 {
                     //print
-                    NSLog(@"process start: %@\n", process);
+                    NSLog(@"process start:\n%@\n", process);
                 }
                 //process exit event
                 else
