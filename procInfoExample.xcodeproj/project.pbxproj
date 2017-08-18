@@ -100,7 +100,6 @@
 			);
 			name = procInfoExample;
 			productName = procmonConsumer;
-			productReference = 7D6E877D1F3BD53A00D6BD7C /* procInfoExample */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -147,7 +146,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#move binary into top-level bin/ folder\nmv $CODESIGNING_FOLDER_PATH $SRCROOT/bin/";
+			shellScript = "#move binary into top-level bin/ folder\nmv \"$CODESIGNING_FOLDER_PATH\" \"$SRCROOT/bin/\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
